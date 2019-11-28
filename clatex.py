@@ -20,7 +20,7 @@ def lee_csv(filename, L, delim=';'):
 
 def list2file(f, L):
 	for elem in L:
-		f.write(elem + '\t')
+		f.write(elem.replace(',', '.') + '\t')
 	f.write('\n')
 
 def list2latex(L):
