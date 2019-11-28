@@ -1,0 +1,8 @@
+#!/bin/bash
+
+pip install pyperclip
+
+cp clatex.py /usr/local/bin/clatex
+chmod +x /usr/local/bin/clatex
+cp cnelatex.py /usr/local/bin/cnelatex
+chmod +x /usr/local/bin/cnelatex
