@@ -30,6 +30,7 @@ Hay dos comandos distintos que tienen dos fines diferentes: clatex y cnelatex. E
 3) Para dudas sobre el uso del programa se puede poner el nombre del programa seguido de: help, -h o --help. Por ejemplo:
 
 clatex help
+
 cnelatex -h
 
 4) La sintaxis es:
@@ -47,8 +48,11 @@ CLATEX
 Convierte el archivo CSV en una tabla donde la primera línea es la cabecera y el resto de líneas corresponden a celdas separadas. Todas las celdas son consideradas como texto y por lo tanto salvo que se indique lo contrario serán tratadas como LaTeX trata el texto. Es decir el archivo ha de ser de la forma:
 
 Cabecera 1;Cabecera 2;Cabecera 3
+
 Celda 11;Celda 12;Celda 13
+
 Celda 21;Celda 22;Celda 23
+
 Celda 31;Celda 32;Celda 33
 
 CNELATEX
@@ -56,9 +60,13 @@ CNELATEX
 Está pensado para tratar los datos como números (en notación inglesa) y además utiliza la primera mitad de celdas como datos y la segunda mitad de celdas como sus errores. Así que el formato que hay que usar sería el siguiente:
 
 x;y
+
 x 1;y 1;Error x 1;Error y 1
+
 x 2;y 2;Error x 2;Error y 2
+
 x 3;y 3;Error x 3;Error y 3
+
 x 4;y 4;Error x 4;Error y 4
 
 Nótese que las celdas serán tratadas ya, por defecto, como números, lo que dificulta que se pueda introducir texto en ellas.
