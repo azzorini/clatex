@@ -101,10 +101,14 @@ except:
 	print("Error al abrir el archivo de salida {}".format("TXT_" + infile))
 	exit()
 
+if (len(L) <= 1):
+	print("Erorr: La tabla no presenta ninguna fila o solo presenta una cabecera")
+	exit()
+
 latex = """\\begin{table}[htbp]
 \\rowcolors{2}{black!5}{white}
 \\centering
-\\begin{tabular}{ccr}
+\\begin{tabular}{""" + len(L[0])*'c' + """r}
 \\toprule
 """
 
